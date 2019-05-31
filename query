@@ -1,4 +1,4 @@
-SELECT  username, emailaddress
+SELECT username, emailaddress
 FROM i_users
 WHERE userId=(SELECT max(Counter)
               FROM ((SELECT userId, COUNT(*) AS Counter
